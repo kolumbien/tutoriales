@@ -24,7 +24,7 @@ public class Inicializador {
 
     {
         aInitBlock = 3;
-        nextId = 1;
+
     }
 
     static {

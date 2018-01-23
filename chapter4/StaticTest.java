@@ -7,27 +7,27 @@ public class StaticTest
 {
    public static void main(String[] args)
    {
-      // fill the staff array with three Employee objects
-      Employee[] staff = new Employee[3];
+      // fill the staff array with three EmployeeSt objects
+      EmployeeSt[] staff = new EmployeeSt[3];
 
-      staff[0] = new Employee("Tom", 40000);
-      staff[1] = new Employee("Dick", 60000);
-      staff[2] = new Employee("Harry", 65000);
+      staff[0] = new EmployeeSt("Tom", 40000);
+      staff[1] = new EmployeeSt("Dick", 60000);
+      staff[2] = new EmployeeSt("Harry", 65000);
 
-      // print out information about all Employee objects
-      for (Employee e : staff)
+      // print out information about all EmployeeSt objects
+      for (EmployeeSt e : staff)
       {
          e.setId();
          System.out.println("name=" + e.getName() + ",id=" + e.getId() + ",salary="
                + e.getSalary());
       }
 
-      int n = Employee.getNextId(); // calls static method
+      int n = EmployeeSt.getNextId(); // calls static method
       System.out.println("Next available id=" + n);
    }
 }
 
-class Employee
+class EmployeeSt
 {
    private static int nextId = 1;
 
@@ -35,7 +35,7 @@ class Employee
    private double salary;
    private int id;
 
-   public Employee(String n, double s)
+   public EmployeeSt(String n, double s)
    {
       name = n;
       salary = s;
@@ -70,7 +70,7 @@ class Employee
 
    public static void main(String[] args) // unit test
    {
-      Employee e = new Employee("Harry", 50000);
+      EmployeeSt e = new EmployeeSt("Harry", 50000);
       System.out.println(e.getName() + " " + e.getSalary());
    }
 }
