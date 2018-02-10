@@ -9,7 +9,7 @@ import inheritance.Employee;
  */
 public class ArregloLista {
 
-    public static void main(String []args){
+    public static void main(String ...args){
 
         ArrayList<Integer> ee = new ArrayList<>(4);
         Employee[] emp = new Employee[3];
