@@ -1,4 +1,4 @@
-package javamaster;
+package javamaster.useful;
 
 import java.util.Arrays;
 import java.util.List;
@@ -97,6 +97,34 @@ public class ReminderOperator {
     return result
         * */
 
+    }
+
+    /**
+     * Extract digits of a number
+     * @param number
+     * @return
+     */
+    private static int sumDigits(int number) {
+
+        if (number < 10) {
+            return -1;
+        }
+
+        int sum = 0;
+
+        // 125 -> 125 / 10 = 12 -> 12 * 10 = 120 -> 125 - 120 = 5
+        while (number > 0) {
+            // extract the least-significant digit
+            int digit = number % 10;
+            System.out.print("number % 10 " +  digit);
+            sum += digit;
+
+            // drop the least-significant digit
+            System.out.println(" number / 10 " +  number/10);
+            number /= 10;   // same as number = number / 10;
+        }
+
+        return sum;
     }
 
 }
