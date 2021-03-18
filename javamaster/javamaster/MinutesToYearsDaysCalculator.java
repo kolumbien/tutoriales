@@ -17,7 +17,7 @@ public class MinutesToYearsDaysCalculator {
             long days=   minutes / 1440l;
             long daysLeft = days % 365;
 
-            System.out.println(String.format("%d min = %d y and %d d", minutes, years, daysLeft));
+            System.out.println(String.format("%d min = %d year and %d days", minutes, years, daysLeft));
         }
     }
 }
