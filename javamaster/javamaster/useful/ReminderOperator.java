@@ -127,4 +127,15 @@ public class ReminderOperator {
         return sum;
     }
 
+    /**
+     * El reminder o sobrante es totalPages % 2
+     * @param totalPages
+     */
+    public void numberOfPrintBlatt(int totalPages){
+        int total = (totalPages /2) + (totalPages % 2);
+
+        System.out.println("numero de hojas a usar en duplex mode = " + total);
+
+    }
+
 }
