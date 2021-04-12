@@ -3,7 +3,7 @@ package interfaces;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class MainSaveable {
 
     public static void main(String[] args) {
         // Create a simple interface that allows an object to be saved to some sort of storage medium.
