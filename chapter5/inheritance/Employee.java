@@ -2,7 +2,7 @@ package inheritance;
 
 import java.time.*;
 
-import org.omg.CORBA.IntHolder;
+//import org.omg.CORBA.IntHolder;
 
 public class Employee
 {
@@ -48,8 +48,8 @@ public class Employee
       return 9;
    }
 
-   public void triple(IntHolder x){
+  /* public void triple(IntHolder x){
        x.value = 3 * x.value;
 
-   }
+   }*/
 }

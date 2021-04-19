@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-import org.omg.CORBA.IntHolder;
+//import org.omg.CORBA.IntHolder;
 
 import inheritance.Employee;
 
@@ -22,11 +22,11 @@ public class ArregloLista {
         int b = ee.get(0);
 
         Employee e = new Employee();
-        IntHolder a = new IntHolder(2);
+      /*  IntHolder a = new IntHolder(2);
         e.triple(a);
 
 
-        System.out.println(a.value);
+        System.out.println(a.value);*/
 
 
 
